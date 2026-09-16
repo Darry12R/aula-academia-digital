@@ -1,0 +1,32 @@
+AULA — GUÍA DE MENSAJES CLAROS
+Material de muestra para Comunicación clara con clientes.
+Practica con datos ficticios.
+
+1. COMPRENDER
+Entiendo que necesitas [resultado] para [contexto].
+¿Puedes confirmar [información necesaria]?
+Con esa información podré [siguiente paso].
+
+2. RESPONDER
+La propuesta es [respuesta principal].
+Incluye [información concreta].
+Para continuar, necesitamos [acción de la otra persona].
+
+3. COMUNICAR TIEMPOS
+Compartiremos [entregable] el [fecha], si recibimos [material] el [fecha].
+Después, [responsable] deberá [siguiente acción].
+Si todavía no puedes confirmar un plazo, indica cuándo lo revisarás.
+
+4. DAR SEGUIMIENTO
+Hola, Alex. Retomo [asunto y referencia].
+¿Puedes confirmar [decisión concreta]?
+Si necesitas revisarlo más adelante, podemos [alternativa real].
+
+ANTES DE ENVIAR
+[ ] La respuesta principal aparece al inicio.
+[ ] Las fechas, cantidades y responsabilidades están claras.
+[ ] Los archivos mencionados están incluidos.
+[ ] No prometo resultados que no controlo.
+[ ] El siguiente paso es fácil de identificar.
+
+AULA es una marca ficticia. Proyecto demostrativo desarrollado por NUVEXA.

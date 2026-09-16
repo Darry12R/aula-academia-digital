@@ -1,0 +1,11 @@
+import {getCourse} from './data.js';
+export const state={profile:null,enrollments:{}};
+export function enroll(id,profile){if(!getCourse(id))throw Error('Curso no disponible');if(state.enrollments[id])return false;state.profile={...profile};state.enrollments[id]={completed:[],activities:{},quiz:null,last:null};return true;}
+export function progress(id){const e=state.enrollments[id];return e?e.completed.length*25:0;}
+export function continuation(id){const e=state.enrollments[id];if(!e)return 0;if(e.last!==null&&!e.completed.includes(e.last))return e.last;return [0,1,2,3].find(i=>!e.completed.includes(i))??0;}
+export function visit(id,index){if(!Number.isInteger(index)||index<0||index>3)throw Error('Lección no disponible');if(state.enrollments[id])state.enrollments[id].last=index;}
+export function evaluate(id,answers){const c=getCourse(id),e=state.enrollments[id];if(!c||!e)throw Error('Inscríbete para guardar la evaluación');if(!Array.isArray(answers)||answers.length!==3||answers.some(a=>!Number.isInteger(a)||a<0||a>2))throw Error('Responde las tres preguntas');const score=answers.reduce((n,a,i)=>n+Number(a===c.quiz[i].correct),0);e.quiz={answers:[...answers],score,passed:score>=2};if(!e.quiz.passed)e.completed=e.completed.filter(i=>i!==3);return e.quiz;}
+export function setCompleted(id,index,completed){const e=state.enrollments[id];if(!e)throw Error('Inscríbete para registrar tu avance');if(!Number.isInteger(index)||index<0||index>3)throw Error('Lección no disponible');if(completed&&index===3&&!e.quiz?.passed)throw Error('Aprueba la evaluación con al menos dos respuestas correctas para completar esta lección.');e.completed=e.completed.filter(i=>i!==index);if(completed)e.completed.push(index);return progress(id);}
+export function saveActivity(id,index,text){if(!state.enrollments[id])throw Error('Inscríbete para guardar tu actividad');state.enrollments[id].activities[index]=text;}
+export function reset(){state.profile=null;state.enrollments={};}
+export function seed(){reset();enroll('organizacion',{name:'Alex Ejemplo',email:'alex@example.com'});setCompleted('organizacion',0,true);saveActivity('organizacion',0,'Responder cinco solicitudes pendientes antes del viernes.');visit('organizacion',1);}

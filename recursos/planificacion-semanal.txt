@@ -1,0 +1,31 @@
+AULA — PLANIFICACIÓN SEMANAL
+Material de muestra para Organiza tu negocio digital.
+Utiliza información ficticia durante la demostración.
+
+SEMANA: ____________________
+OBJETIVO: ¿Qué resultado concreto quieres alcanzar?
+EVIDENCIA: ¿Cómo comprobarás que está terminado?
+FECHA DE REVISIÓN: ____________________
+TIEMPO DISPONIBLE: ____________________
+
+TAREAS
+Acción | Responsable | Tiempo estimado | Depende de | Estado
+1. ______________________________________________________
+2. ______________________________________________________
+3. ______________________________________________________
+Estados sugeridos: pendiente, en curso, terminado.
+
+REGISTRO DE SOLICITUDES
+Fecha | Código | Asunto | Responsable | Estado | Próximo paso
+Ejemplo: lunes | S-014 | Folleto | Alex | En espera | Confirmar horario
+
+REGLA DE ARCHIVOS
+Fecha_asunto_version. Ejemplo: 2026-09_folleto_v02.pdf
+Separa borradores de versiones listas para compartir.
+
+REVISIÓN
+Avance comprobado: _______________________________________
+Pendiente y decisión (continuar/dividir/esperar/descartar): __
+Una mejora para la próxima semana: _______________________
+
+AULA es una marca ficticia. Proyecto demostrativo desarrollado por NUVEXA.
