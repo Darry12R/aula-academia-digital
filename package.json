@@ -1,1 +1,10 @@
-{"name":"aula-academia-digital","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test tests/state.test.js"}}
+{
+  "name": "aula-academia-digital",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/state.test.js",
+    "build": "node build-static.mjs"
+  }
+}

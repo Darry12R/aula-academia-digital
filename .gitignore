@@ -8,3 +8,4 @@ node_modules/
 Thumbs.db
 work/
 test-results/
+public-build/
